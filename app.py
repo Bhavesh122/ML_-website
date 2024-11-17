@@ -94,7 +94,7 @@ def predict():
         return render_template('result.html', result=result, result_class=result_class)
 
     except Exception as e:
-        return render_template('form.html', result=f"Error: {str(e)}", result_class="error")
+        return render_template('index.html', result=f"Error: {str(e)}", result_class="error")
 
 if __name__ == '__main__':
     app.run(debug=True)
