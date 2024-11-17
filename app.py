@@ -48,7 +48,7 @@ def predict_cardio_risk(age, height, weight, ap_hi, ap_lo, gender, cholesterol, 
 # Route to display the input form
 @app.route('/')
 def index():
-    return render_template('form.html')
+    return render_template('index.html')
 
 # Route to handle form submission and prediction
 @app.route('/predict', methods=['POST'])
